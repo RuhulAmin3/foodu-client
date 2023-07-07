@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import authServices from "./services/authServices";
 import uploadServices from "./services/authServices";
 import authReducer from "./reducers/authSlice";
@@ -6,7 +6,7 @@ import drawerReducer from "./reducers/drawerSlice";
 import cartReducer from "./reducers/cartSlice";
 import userServices from "./services/userServices";
 import productServices from "./services/productServices";
-import { persistStore, persistReducer } from "redux-persist";
+import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 const persistConfig = {
